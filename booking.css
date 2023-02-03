@@ -1,0 +1,33 @@
+h3{
+    font-size:2rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+h4{
+    font-size:1rem;
+    font-family: poppins;
+    font-weight: 700;
+
+    overflow: hidden;
+    margin-top: 5px;
+ 
+}
+.all>.bb{
+    transition: 0.4s ease-in;
+}
+.bb{
+  
+}
+.bb >input:hover{
+background-color: #ff40066a;
+cursor: pointer;
+}
+.bb >input:focus-visible{
+background-color: #FF4206;
+color: aliceblue;
+cursor: pointer;
+}

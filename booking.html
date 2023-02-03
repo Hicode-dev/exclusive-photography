@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./booking.css">
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Poppins:wght@300;400;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    
+    <main>
+        <div class="container1 w-100">
+            <div class="content w-100">
+                <nav class="px-4 py-3 w-100">
+                    <!-- this is a for the offcanvas for the small screen -->
+
+
+
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                I will not close if you click outside of me.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photography">
+
+                        <p class="exclisive"> exclusive <br>
+                            photography</p>
+
+                    </div>
+                    <button class="btn  canvass" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <!-- <i class="icofont-ui-camera"></i> -->
+                        <i class="fa-regular fa-bars"></i>
+                    </button>
+                    <div class="nav2">
+                        <p> Home</p>
+                        <p><a href="#about text-dark"> About</p></a>
+                        <p><a href="#team text-dark">Team</a></p>
+                        <p>Gallery</p>
+                        <p>Bookings</p>
+                    </div>
+                    <div class="lets-talk">
+                        <div class="btn btn-danger letstalk-nav">lets talk</div>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+        <div class="container-fluid " style="margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+      <div class="text-session ">
+        <h4>Book a photography session with us</h4>
+        <h3>What type of shots do you want to take?</h3>
+      </div>
+     <div class="all">
+        <div class="box-session gap-3 py-3 form-group" style="display: flex; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
+            <div class="space bb ">
+                <input class="form-control py-3 px-5 " value="wedding" readonly>
+            </div>
+            <div class="space bb">
+                   <input class="form-control py-3 px-5 " value="cooperate" readonly>
+            </div>
+          
+    
+          </div>
+          <div class="box-session gap-3 py-2 " style="display: flex; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
+            <div class="space bb ">
+                   <input class="form-control py-3 px-5 " value="family" readonly>
+            </div>
+            <div class="space bb">
+                   <input class="form-control py-3 px-5 " value="birthday" readonly>
+            </div>
+          
+    
+          </div>
+          <div class="box-session gap-3 py-2  " style="display: flex; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
+            <div class="space bb">
+                   <input class="form-control py-3 px-5 " value="merternity" readonly>
+            </div>
+            <div class="space bb">
+               <input class="form-control py-3 px-5 " value="casual" readonly>
+            </div>
+          
+    
+          </div>
+          <div class="box-session gap-3 py-2 " style="text-align: center;">
+            <div class="space bb" style="text-align: center;" onclick="op()">
+               <input class="form-control py-3 px-5 " value="other" readonly style="text-align: center;">
+            </div>
+         
+    
+          </div>
+          
+          
+          <div class="box-session gap-3 py-2  " style="text-align: center;" id="nob">
+            <div class="space" style="text-align: center;">
+               <div class="form-control py-3 px-5 " contenteditable="" style="height: 20rem;">
+               </div>
+            </div>
+         
+     </div>
+
+     <div class="setDate mt-5">
+        <h3>Select Date and Time</h3>
+
+        <div class="box-session gap-3 py-3 " style="display: flex; align-items: center; justify-content: center; text-align: center; flex-wrap: wrap;">
+            <div class="form-group">
+                <input type="date" class="form-control">
+                
+            </div>
+              <div class="form-group">
+                <input type="time"  class="form-control">
+
+              </div>
+     </div>
+        </div>
+
+                
+        <div class="extra mt-5">
+            <h3>extra information</h3>
+            
+            <div class="box-session gap-3 py-2 " style="text-align: center;">
+                <div class="space" style="text-align: center;">
+                <label for="">Phone Number</label>
+
+                   <input class="form-control py-3 px-5 " >
+                </div>
+             
+        
+            <div class="box-session gap-3 py-2 " style="text-align: center;">
+                <div class="space" style="text-align: center;">
+                    <label for="">Number of People in session</label>
+                   <input class="form-control py-3 px-5 " >
+                </div>
+             
+        
+            <div class="box-session gap-3 py-2 " style="text-align: center;">
+                <div class="space" style="text-align: center;">
+                    <label for="">Note to photographer:Optional</label>
+                   <div class="form-control py-3 px-5 " contenteditable="" style="height: 20rem;" >
+                   </div>
+                </div>
+             
+        
+              </div>
+           
+        </div>
+   
+        <div class="btn bookNow mt-5 "  data-bs-toggle="modal" data-bs-target="#exampleModal">book section</div>
+
+        <!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+        <img src="./images/verified.gif" alt="" width="40%"> 
+        <h4>Thank you for booking a session with us at Exclusive Photography</h4>
+        <p>We hope to see you soon</p>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+    </div> 
+
+    </main>
+    <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="./booking.js"></script>
+</body>
+</html>

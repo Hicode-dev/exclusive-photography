@@ -1,4 +1,8 @@
  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Poppins:wght@300;400;500;800&display=swap'); 
+ html {
+    scroll-behavior: smooth;
+  }
+  
 *{
     margin: 0;
     padding: 0;
@@ -122,8 +126,13 @@ color: #FF4206;
 .cont2-col{
     text-align: end;
 }
+.oo{
+    margin: 1rem 0rem;
+
+}
 .gb{
     margin: 1rem 0rem;
+    display: none;
 }
 .content img{
     width: 12rem;
@@ -137,9 +146,53 @@ color: #FF4206;
     align-items: center;
     justify-content: center;
 }
-.meet-img {
+.gallery{
+    margin-top: 4rem;
+}
+.gallery h1{
+    font-size:3rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-left:8rem;
+    overflow: hidden;
+}
+.last h2{
+    font-size:2rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+color: #FF4206;
+
+    overflow: hidden;
+}
+.last h4{
+    font-size:1.4rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.pop{
+color: #FF4206;
+
+}
+.last h3{
+    font-size:1.4rem;
+    font-family: poppins;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.meet-img img {
     /* padding-left: rem; */
     /* border: 1px solid red; */
+    border-radius:0.5rem ;
 }
 .button-for-social-media-link{
     margin-top: 3rem;
@@ -162,13 +215,134 @@ color: #FF4206;
     width: 2.4rem;
     height: 2.4rem;
     padding: 0.5rem;
+    margin-top: -3rem;
     
 }
 .meet-img{
     margin-top: 4rem;
 }
 .letstalk-button{
-    display: none;
+    /* display: none; */
+}
+.meet-all{
+    padding-bottom: 0.6rem ;
+}
+.prr{
+    width:10rem;
+    height:10rem;
+    padding-top: 0.6rem;
+    
+}
+
+.ourproject{
+    /* display: flex !important; */
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-left: 5rem; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+.abso{
+    width: 8rem;
+    height: 8rem;
+   margin: 1rem 4.8rem ;
+
+}
+.abso:hover{
+    background-color: #FF4206;
+   
+}
+.pict{
+    position: relative;
+}
+.pict img{
+    width: 10rem;
+    height: 10rem;
+    border-radius:0.5rem  ;
+}
+.bb{
+    cursor: pointer !important;
+}
+.hg i{
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin: auto; */
+    /* padding: 1rem; */
+    width: 10rem;
+/* visibility: hidden; */
+opacity: 0;
+transition: 0.8s ease-in-out;
+
+    /* border: #FF4206 2px solid; */
+}
+.hg:focus-within{
+   visibility: visible !important;
+
+}
+.hg:hover{
+   background-color: #ff40063f;
+   opacity: 1;
+
+
+}
+.pict{
+    padding-bottom: 0.5rem;
+}
+/* .card-img-overlay{
+    visibility:hidden;
+}
+.card-img-overlay:hover{
+    visibility: visible !important;
+
+} */
+.bgf{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+.black-box{
+    padding: 1rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+.black-box h1{
+   color: aliceblue;
+    font-size:2rem;
+    font-family: poppins;
+    font-weight: 700;
+
+    overflow: hidden;
+}
+.bookNow{
+    background-color: #FF4206 !important;
+    filter:drop-shadow(37.5px);
+    padding: 0.7rem 4rem;
+    /* margin: 0rem 2rem !important; */
+    text-align: center;
+    color: aliceblue;
 }
 @media screen and (max-width:700px) {
     .container2{
@@ -257,6 +431,26 @@ color: #FF4206;
 .meet h1{
     font-size: 3rem;
 }
+ .gallery h1{
+    font-size: 2.4rem;
+    font-family: poppins;
+    font-weight: 700;
+    /* display: flex;
+    align-items: center; */
+    margin-left:1rem;
+    /* justify-content: center;  */
+    /* overflow: hidden; */
+} 
+/* .ourproject{
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}*/
+.pict img{
+    width:10rem;
+    height:10rem;
+} 
 }
 /* @media screen and (max-width:1024px) {
     .letstalk-nav{
