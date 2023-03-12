@@ -1,36 +1,35 @@
-const header = document.querySelector("header");
-
-window.addEventListener ("scroll", function() {
-	header.classList.toggle ("sticky", window.scrollY > 0);
+const observer1 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }else{
+            entry.target.classList.remove('show')
+        }
+    })
+});
+const observer2 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('sharpp')
+        }else{
+            entry.target.classList.remove('sharpp')
+        }
+    })
 });
 
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
+const hiddenLoki = document.querySelectorAll('.loki')
+hiddenLoki.forEach((el)=> observer1.observe(el) )
 
-menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navlist.classList.toggle('active');
-};
+const sharp = document.querySelectorAll('.sharp')
+sharp.forEach((el)=> observer2.observe(el) )
 
-window.onscroll = () => {
-	menu.classList.remove('bx-x');
-	navlist.classList.remove('active');
-};
+const left = document.querySelectorAll('.left')
+left.forEach((el)=> observer2.observe(el) )
 
-const sr = ScrollReveal ({
-	distance: '45px',
-	duration: 2700,
-	reset: true
-})
 
-sr.reveal('.home-text',{delay:350, origin:'left'});
-sr.reveal('.home-img',{delay:350, origin:'right'});
 
-sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'});
-
-let myArray = [ './images/WhatsApp Image 2022-11-02 at 1.23.10 PM.jpeg ','./images/WhatsApp Image 2022-11-02 at 1.23.10 PM.jpeg ','./images/WhatsApp Image 2022-11-02 at 1.23.10 PM.jpeg ','./images/WhatsApp Image 2022-11-02 at 1.23.10 PM.jpeg ' ]
-
-const help = document.getElementsByClassName('pict')
 
 
 // for (let index = 0; index < pict.length; index++) {

@@ -20,62 +20,79 @@
 
     <main>
         <div class="container1 w-100">
-            <div class="content w-100">
-                <nav class="px-4 py-3 w-100">
+            <div class="content position w-100">
+                <nav class=" px-4 py-3 w-100 ">
                     <!-- this is a for the offcanvas for the small screen -->
+                    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="icofont-camera-alt"></i></button>
 
-
-
-                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-                        aria-labelledby="staticBackdropLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                    <div class="offcanvas offcanvas-start w-75"  tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <div class="nav flex flex-column fs-4">
+                            <p> Home</p>
+                            <p><a href="#about"> About</p></a>
+                            <p><a href="#team">Team</a></p>
+                            <p ><a href="#gal">Gallery</a></p>
+                            <p ><a href="./booking.html">Bookings</a></p>
                         </div>
-                        <div class="offcanvas-body">
-                            <div>
-                                I will not close if you click outside of me.
-                            </div>
+                        <div class="lets-talk">
+                            <div class="btn btn-danger letstalk-nav">lets talk</div>
                         </div>
+                      </div>
                     </div>
                     <div class="photography">
 
                         <p class="exclisive"> exclusive <br>
                             photography</p>
+                    
+                    </div>
+</div>
 
-                    </div>
-                    <button class="btn  canvass" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                        <!-- <i class="icofont-ui-camera"></i> -->
-                        <i class="fa-regular fa-bars"></i>
-                    </button>
-                    <div class="nav2">
-                        <p> Home</p>
-                        <p><a href="#about text-dark"> About</p></a>
-                        <p><a href="#team text-dark">Team</a></p>
-                        <p ><a href="#gal text-dark">Gallery</a></p>
-                        <p ><a href="#book text-dark">Bookings</a></p>
-                    </div>
-                    <div class="lets-talk">
-                        <div class="btn btn-danger letstalk-nav">lets talk</div>
-                    </div>
+         
                 </nav>
 
+                
             </div>
+   
+        </div>
+        <div class="nav2 bg-white">
+            <div class="photography">
 
+                <p class="exclisive"> exclusive <br>
+                    photography</p>
+
+            </div>
+            <button class="btn  canvass" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <!-- <i class="icofont-ui-camera"></i> -->
+                <i class="fa-regular fa-bars"></i>
+            </button>
+            <div class="nav2">
+                <p> Home</p>
+                <p><a href="#about"> About</p></a>
+                <p><a href="#team">Team</a></p>
+                <p ><a href="#gal">Gallery</a></p>
+                <p ><a href="./booking.html">Bookings</a></p>
+            </div>
+            <div class="lets-talk">
+                <div class="btn btn-danger letstalk-nav">lets talk</div>
+            </div>
+ 
         </div>
         <!-- this is the main head which has two content in its conatainer  -->
-        <div class="container2 row ">
+        <div class="container2  row ">
             <!-- this is here for the image container -->
-            <div class="d1 col-sm-6   cont2-col  ">
+            <div class="d1 col-sm-6 sharp cont2-col  ">
 
                 <img src="./images/WhatsApp Image 2022-11-02 at 1.23.21 PM.jpeg" class="border   mm border-pill "
                     alt="">
 
             </div>
             <!-- this is for the  text in the second container -->
-            <div class="col-sm-6 text ps-5  pt-5 ">
+            <div class="col-sm-6 text ps-5 li pt-5 ">
                 <div class="all-text-col">
                     <h1> CAPTURE <br><span class="auto-type" id="auto-type" style="text-transform: uppercase;">
                             BEAUTIFUL</span> <br> MOMENTS.</h1>
@@ -85,7 +102,7 @@
                         maternity and all kind of photography work.
 
                     </p>
-                    <div class="btn btn-danger letstalk-button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasRight">lets talk</div>
+                    <div class="btn btn-danger letstalk-button"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasRight"><a href="./place.html">lets talk</a> </div>
                   
 
 <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -107,7 +124,7 @@
     <img src="./images/IMG-20221102-WA0062 1 (1).png"  width="70%" alt=""  >
 
 </div>
-<div class="last mt-5 container-fluid px-5 " >
+<div class="last mt-5 shar container-fluid px-5 " >
     <div class="row ">
         <div class="col   ">
             <h2>Let’s make some thing great together</h2>
@@ -145,12 +162,12 @@
                 </div>
             </div>
         </div>
-        <div class="container2 row w-100 second-media-screen" id="abou">
+        <div class="container2 row w-100 second-media-screen" >
             <div class="house">
                 <!-- this is here for the image container -->
-                <div class="d1 col-sm-6       ">
+                <div class="d1 col-sm-6     left  ">
 
-                    <div class="l text-for-meet">
+                    <div class="l text-for-meet ">
                         <img src="./images/WhatsApp Image 2022-11-02 at 1.23.23 PM.jpeg"
                             class="border w-100   mm border-pill " alt="">
 
@@ -171,16 +188,16 @@
                             We invest noteworthy energy in wedding <br> photography, corporate, family, birthday,<br>
                             maternity and all kind of photography work.
                         </p>
-                        <div class="btn btn-danger letstalk-button   " data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">lets talk</div>
+                        <div class="btn btn-danger letstalk-button   " data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft"><a href="./place2.html">lets talk</a></div>
                        
 
 
                         
-                    </div>
+                    </div>+ 
                 </div>
             </div>
         </div>
-        <div class="container2 bob row w-100  other" >
+        <div class="container2 bob row w-100  other  " id="about" >
             <!-- this is here for the image container -->
             <div class="col-sm-6  ps-5   text ">
                 <div class="op cont2-col">
@@ -189,7 +206,7 @@
                         We invest noteworthy energy in wedding <br> photography, corporate, family, birthday,<br>
                         maternity and all kind of photography work.
                     </p>
-                    <div class="btn btn-danger letstalk-button oo ">lets talk</div>
+                    <div class="btn btn-danger letstalk-button oo "><a href="./place2.html">lets talk</a></div>
                     <div class="row gg">
                         <div class=" col ">
                             <img src="./images/WhatsApp Image 2022-11-02 at 1.23.26 PM (1).jpeg" alt="">
@@ -200,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="d1 col-sm-6  ">
+            <div class="d1 col-sm-6 left ">
                 <img src="./images/WhatsApp Image 2022-11-02 at 1.23.23 PM.jpeg"
                     class="border w-100 img2  mm border-pill " alt="">
             </div>
@@ -213,7 +230,7 @@
 
             <div class="meet-img ">
                 <div class="row w-100 meet-all">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 sharp dope">
                         <div class="content " style="text-align:end;">
                             <div class="meet-image" style="text-align: end;">
                                 <img src="./images/WhatsApp Image 2022-11-02 at 1.48.45 PM.jpeg" alt="">
@@ -221,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 sharp dope">
                         <div class="text-for-meet pt-5">
                             <h5>CEO, Exclusive Photography</h5>
                             <h6>Adewale Aderinto Tupac</h6>
@@ -240,7 +257,7 @@
                     </div>
                 </div>
                 <div class="row w-100 meet-all">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 sharp dope">
                         <div class="content " style="text-align:end;">
                             <div class="meet-image" style="text-align: end;">
                                 <img src="./images/WhatsApp Image 2022-11-02 at 1.48.14 PM (1).jpeg" alt="">
@@ -248,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 sharp dope">
                         <div class="text-for-meet pt-5">
                             <h5>CEO, Exclusive Photography</h5>
                             <h6>Adewale Aderinto Tupac</h6>
@@ -267,7 +284,7 @@
                     </div>
                 </div>
                 <div class="row w-100 meet-all">
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 sharp dope">
                         <div class="content " style="text-align:end;">
                             <div class="meet-image" style="text-align: end;">
                                 <img src="./images/WhatsApp Image 2022-11-02 at 1.48.15 PM.jpeg" alt="">
@@ -275,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 sharp dope">
                         <div class="text-for-meet pt-5">
                             <h5>CEO, Exclusive Photography</h5>
                             <h6>Adewale Aderinto Tupac</h6>
@@ -1806,20 +1823,21 @@
         </div>
      </div>
 
-     <div class="black-box my-3 row" style="text-align: center;">
+     <div class="black-box my-3 row w-100" style="text-align: center;">
         <div class="col-md-8"><h1 class="" >Book an appointment today</h1></div>
-        <div class="col-md-4"><div class="btn bookNow">book now</div></div>
+        <div class="col-md-4"><div class="btn bookNow"><a href="./booking.html">book now</a></div></div>
      </div>
          </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+    <script src="./index.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
             strings: [" memorable", " special", " magical", " wonderful"],
             typeSpeed: 150,
             backSpeed: 150,
-            loop: true
+            loop: true,
         })
     </script>
 </body>
