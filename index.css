@@ -101,7 +101,7 @@ line-height: -3px;
 .nav2{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+   align-items: center;
     gap: 2rem;
     position: sticky;
     top: 0;
@@ -435,6 +435,11 @@ transition: 0.8s ease-in-out;
 .all-text-col{
     text-align: center;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .cont2-col img{
     width: 120;
 }
@@ -482,6 +487,7 @@ color: #FF4206;
 .meet h1{
     font-size: 3rem;
 }
+
  .gallery h1{
     font-size: 2.4rem;
     font-family: poppins;
